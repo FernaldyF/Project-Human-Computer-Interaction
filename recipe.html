@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VKellogg's Home</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+</head>
+<body>
+    <header>
+        <input type="checkbox" id="toggler">
+        <label for="toggler" class="fas fa-bars"></label>
+        <a href="index.html" class="logo">VKellogg's<span>.</span></a>
+        <nav class="navbar">
+            <a href="index.html">Home</a></li>
+            <a href="product.html">Products</a>
+            <a href="recipe.html">Recipes</a>
+            <a href="aboutus.html">About Us</a>
+            <a href="contactus.html">Contact Us</a>
+        </nav>
+    </header>
+    <section class="recipe" id="home">
+        <div class="content">
+            <h2>Creative <span>Breakfast Recipes</span></h2>
+            <p>Get inspired with our creative and easy breakfast recipes. Explore our collection to make your mornings delicious and nutritious.</p>
+        </div>
+    </section>
+    <section class="recipes">
+        <div class="recipe-section" id="popular-recipes">
+            <h1 class="heading">Most <span>Popular</span></h1>
+            <div class="recipe-carousel">
+                <div class="recipe-card">
+                    <img src="img/1_4.png" alt="">
+                    <h3>Brownies</h3>
+                    <p>⏱ 90 min 👥 24 servings</p>
+                    <p>⭐⭐⭐⭐⭐ (110)</p>
+                    <button>View Recipe</button>
+                </div>
+                <div class="recipe-card">
+                    <img src="img/1_2.png" alt="">
+                    <h3>Almond Crunch Pudding</h3>
+                    <p>⏱ 40 min 👥 6 servings</p>
+                    <p>⭐⭐⭐⭐⭐ (150)</p>
+                    <button>View Recipe</button>
+                </div>
+                <div class="recipe-card">
+                    <img src="img/1_1.png" alt="">
+                    <h3>"Fried" Ice Cream Bars</h3>
+                    <p>⏱ 260 min 👥 16 servings</p>
+                    <p>⭐⭐⭐⭐ (80)</p>
+                    <button>View Recipe</button>
+                </div>
+                <div class="recipe-card">
+                    <img src="img/1_3.png" alt="">
+                    <h3>Apple Crisp</h3>
+                    <p>⏱ 40 min 👥 8 servings</p>
+                    <p>⭐⭐⭐⭐⭐ (140)</p>
+                    <button>View Recipe</button>
+                </div>
+                <div class="recipe-card hidden">
+                    <img src="img/1_9.png" alt="">
+                    <h3>Apple Coffee Cake</h3>
+                    <p>⏱ 40 min 👥 16 servings</p>
+                    <p>⭐⭐⭐⭐ (75)</p>
+                    <button>View Recipe</button>
+                </div>
+                <div class="recipe-card hidden">
+                    <img src="img/1_14.png" alt="">
+                    <h3>Banana Date Bread</h3>
+                    <p>⏱ 150 min 👥 16 servings</p>
+                    <p>⭐⭐⭐⭐⭐ (200)</p>
+                    <button>View Recipe</button>
+                </div>
+                <div class="recipe-card hidden">
+                    <img src="img/1_21.avif" alt="">
+                    <h3>Baked Apple Pancake</h3>
+                    <p>⏱ 30 min 👥 6 servings</p>
+                    <p>⭐⭐⭐⭐ (90)</p>
+                    <button>View Recipe</button>
+                </div>
+                <div class="recipe-card hidden">
+                    <img src="img/1_8.png" alt="">
+                    <h3>Almost S'mores</h3>
+                    <p>⏱ 5 min 👥 1 servings</p>
+                    <p>⭐⭐⭐⭐⭐ (110)</p>
+                    <button>View Recipe</button>
+                </div>          
+            </div>                
+            <div class="buttons-container">
+                <button class="more-recipe" onclick="showMoreRecipes('popular-recipes')">More Recipe</button>
+                <button class="show-less-recipe" onclick="showLessRecipes('popular-recipes')">Show Less</button>
+            </div>
+        </div>
+        <div class="recipe-section" id="recommended-recipes">
+            <h1 class="heading">Menu <span>Recommended</span></h1>
+            <div class="recipe-carousel">
+                <div class="recipe-card">
+                    <img src="img/1_5.png" alt="">
+                    <h3>Caramel Cashew Crunch Bars</h3>
+                    <p>⏱ 10 min 👥 24 servings</p>
+                    <p>⭐⭐⭐⭐⭐ (130)</p>
+                    <button>View Recipe</button>
+                </div>
+                <div class="recipe-card">
+                    <img src="img/1_13.png" alt="">
+                    <h3>BBQ Pork Sticks</h3>
+                    <p>⏱ 45 min 👥 4 servings</p>
+                    <p>⭐⭐⭐⭐ (85)</p>
+                    <button>View Recipe</button>
+                </div>
+                <div class="recipe-card">
+                    <img src="img/1_16.png" alt="">
+                    <h3>Baked Cheese Sticks</h3>
+                    <p>⏱ 25 min 👥 6 servings</p>
+                    <p>⭐⭐⭐⭐⭐ (95)</p>
+                    <button>View Recipe</button>
+                </div>
+                <div class="recipe-card">
+                    <img src="img/1_17.png" alt="">
+                    <h3>Barbecue Beef & Bean Skillet</h3>
+                    <p>⏱ 30 min 👥 6 servings</p>
+                    <p>⭐⭐⭐⭐ (70)</p>
+                    <button>View Recipe</button>
+                </div>
+                <div class="recipe-card hidden">
+                    <img src="img/1_18.png" alt="">
+                    <h3>Cherry Bars</h3>
+                    <p>⏱ 115 min 👥 12 servings</p>
+                    <p>⭐⭐⭐⭐⭐ (120)</p>
+                    <button>View Recipe</button>
+                </div>
+                <div class="recipe-card hidden">
+                    <img src="img/1_19.png" alt="">
+                    <h3>Choco-Nut Chews</h3>
+                    <p>⏱ 75 min 👥 48 servings</p>
+                    <p>⭐⭐⭐⭐ (65)</p>
+                    <button>View Recipe</button>
+                </div>
+                <div class="recipe-card hidden">
+                    <img src="img/1_20.png" alt="">
+                    <h3>Almond Crunch Pudding</h3>
+                    <p>⏱ 40 min 👥 6 servings</p>
+                    <p>⭐⭐⭐⭐⭐ (150)</p>
+                    <button>View Recipe</button>
+                </div>
+                <div class="recipe-card hidden">
+                    <img src="img/1_10.png" alt="">
+                    <h3>Blueberry Almond Bars</h3>
+                    <p>⏱ 35 min 👥 16 servings</p>
+                    <p>⭐⭐⭐⭐ (80)</p>
+                    <button>View Recipe</button>
+                </div>      
+            </div>                
+            <div class="buttons-container">
+                <button class="more-recipe" onclick="showMoreRecipes('recommended-recipes')">More Recipe</button>
+                <button class="show-less-recipe" onclick="showLessRecipes('recommended-recipes')">Show Less</button>
+            </div>
+        </div>
+        <div class="recipe-section" id="Family-Favorites">
+            <h1 class="heading">Family <span>Favorites</span></h1>
+            <div class="recipe-carousel">
+                <div class="recipe-card">
+                    <img src="img/1_6.png" alt="">
+                    <h3>After School Muffins</h3>
+                    <p>⏱ 30 min 👥 12 servings</p>
+                    <p>⭐⭐⭐⭐⭐ (95)</p>
+                    <button>View Recipe</button>
+                </div>
+                <div class="recipe-card">
+                    <img src="img/1_7.png" alt="">
+                    <h3>Almond Macaroons</h3>
+                    <p>⏱ 75 min 👥 18 servings</p>
+                    <p>⭐⭐⭐⭐ (80)</p>
+                    <button>View Recipe</button>
+                </div>
+                <div class="recipe-card">
+                    <img src="img/1_8.png" alt="">
+                    <h3>Almost S'mores</h3>
+                    <p>⏱ 5 min 👥 1 servings</p>
+                    <p>⭐⭐⭐⭐⭐ (110)</p>
+                    <button>View Recipe</button>
+                </div>
+                <div class="recipe-card">
+                    <img src="img/1_9.png" alt="">
+                    <h3>Apple Coffee Cake</h3>
+                    <p>⏱ 40 min 👥 16 servings</p>
+                    <p>⭐⭐⭐⭐ (75)</p>
+                    <button>View Recipe</button>
+                </div>
+                <div class="recipe-card hidden">
+                    <img src="img/1_11.png" alt="">
+                    <h3>Berry Au Lait</h3>
+                    <p>⏱ 5 min 👥 1 servings</p>
+                    <p>⭐⭐⭐⭐⭐ (105)</p>
+                    <button>View Recipe</button>
+                </div>
+                <div class="recipe-card hidden">
+                    <img src="img/1_12.png" alt="Corn Flake® Crumbs Muffins">
+                    <h3>Be Mine Bowl</h3>
+                    <p>⏱ 5 min 👥 1 servings</p>
+                    <p>⭐⭐⭐⭐ (65)</p>
+                    <button>View Recipe</button>
+                </div>
+                <div class="recipe-card hidden">
+                    <img src="img/1_4.png" alt="Corn Flake® Crumbs Muffins">
+                    <h3>Brownies</h3>
+                    <p>⏱ 90 min 👥 24 servings</p>
+                    <p>⭐⭐⭐⭐⭐ (110)</p>
+                    <button>View Recipe</button>
+                </div>
+                <div class="recipe-card hidden">
+                    <img src="img/1_5.png" alt="">
+                    <h3>Caramel Cashew Crunch Bars</h3>
+                    <p>⏱ 10 min 👥 24 servings</p>
+                    <p>⭐⭐⭐⭐ (70)</p>
+                    <button>View Recipe</button>
+                </div>
+            </div>                
+            <div class="buttons-container">
+                <button class="more-recipe" onclick="showMoreRecipes('Family-Favorites')">More Recipe</button>
+                <button class="show-less-recipe" onclick="showLessRecipes('Family-Favorites')">Show Less</button>
+            </div>  
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="left-section">
+                <a href="index.html" class="logo">VKellogg's<span>.</span></a>
+                <div class="social-icons">
+                    <a href="#" class="fa-brands fa-facebook"></a>
+                    <a href="#" class="fa-brands fa-instagram"></a>
+                    <a href="#" class="fa-brands fa-twitter"></a>
+                    <a href="#" class="fa-brands fa-pinterest"></a>
+                    <a href="#" class="fa-brands fa-youtube"></a>
+                </div>
+                <p>Bringing joy to your mornings with high quality, delicious, and nutritious breakfast foods and snacks since 1906</p>
+                <br>
+                <h2>© VKellogg’s 2024</h2>
+            </div>
+            <div class="footer-nav">
+                <a href="index.html">Home</a>
+                <a href="product.html">Products</a>
+                <a href="recipe.html">Recipes</a>
+                <a href="aboutus.html">About Us</a>
+                <a href="contactus.html">Contact Us</a>
+            </div>
+            <div class="right-section">
+                <p>Follow to get updated</p>
+                <div class="subscribe-container">
+                    <input type="email" id="email" placeholder="Enter your email">
+                    <button class="subscribe-button" onclick="subscribe()">Follow Us</button>
+                </div>
+            </div>
+        </div>
+    </footer>   
+<script src="js/scripts.js"></script>
+</body>
+</html>
